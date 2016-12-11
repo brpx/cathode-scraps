@@ -1,0 +1,26 @@
+{
+    "name": "EZTV",
+    "author": {
+        "name": "Celso Martinho",
+        "github": "celso",
+        "twitter": "celso"
+    },
+    "recipes": [
+        {
+            "title": "Show feed",
+            "url": "/shows/.*",
+            "cache": 320,
+            "scope": "table[width=\"100%\"] tr[name=\"hover\"]",
+            "fields": [
+                {
+                "title": "td a[class=\"epinfo\"]",
+                "link": "td a[class=\"magnet\"]@href",
+                "magnet": "td a[class=\"magnet\"]@href",
+                "torrent": "td a[class^=\"download\"]@href",
+                "size": "td:nth-child(4)",
+                "age": "td:nth-child(5)"
+                }
+            ]
+        }
+    ]
+}

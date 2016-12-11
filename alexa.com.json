@@ -1,0 +1,20 @@
+{
+    "name": "Alexa",
+    "author": {
+        "name": "Celso Martinho",
+        "email": "celso@brpx.com"
+    },
+    "recipes": [
+        {
+            "title": "TOP Sites by Country",
+            "url": "//www.alexa.com/topsites/countries(;[0-9]+)?/.*",
+            "scope": ".site-listing",
+            "fields": [
+                {
+                    "url": "p.desc-paragraph a",
+                    "title": "div.description | trim"
+                }
+            ]
+        }
+    ]
+}
