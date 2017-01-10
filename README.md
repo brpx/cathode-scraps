@@ -1,6 +1,6 @@
 # Scrap files
 
-Adding a new website to Cathode means creating a json file, we call it a **[scrap file][5]**.
+Adding a new website to Cathode means creating a json file, we call it a **scrap file**.
 
 Each scrap includes the author's contacts, general information about the website and a list of recipes.
 
@@ -212,6 +212,11 @@ Currently, we support the following output transformations:
 
 Cathode's engine is slightly based on [X-ray][1] with changes. X-ray is an excellent and modern web scraper known for its flexible schema, composable API and modular architecture. Its [query syntax][2] is based on enhanced jQuery-like strings.
 
+## cathode-cli
+
+[cathode-cli][8] is a command line tool that uses Cathode's API and helps developers to build and test their scrap formulas.
+
+
 [1]: https://github.com/lapwinglabs/x-ray
 [2]: https://github.com/lapwinglabs/x-ray/#selector-api
 [3]: http://api.jquery.com/category/selectors/
@@ -219,3 +224,4 @@ Cathode's engine is slightly based on [X-ray][1] with changes. X-ray is an excel
 [5]: https://github.com/brpx/cathode-scraps
 [6]: https://cathode.io/VTUrK7Q7zKbYtXlrEimbIbIwQMBH9Z.json
 [7]: https://cathode.io/VTUrK7Q7zKbYtXlrEimbIbIwQMBH9Z.rss
+[8]: https://github.com/brpx/cathode-cli
