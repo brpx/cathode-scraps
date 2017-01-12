@@ -190,7 +190,7 @@ You can see how this works in the *grabbing the story* example above.
 
  * **trim** - trimp spaces from string borders
  * **reverse** - reverse string
- * **slice(start,end)** - slice string from offset start to end
+ * **slice:start,end** - slice string from offset start to end
  * **strip** - strips html from result
  * **spaceout** - unglues words from tags, adding a space between
  * **clean** - cleans up excessive spaces and carriage returns, turns them into a single space
