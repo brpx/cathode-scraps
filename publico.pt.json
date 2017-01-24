@@ -8,15 +8,18 @@
         {
             "title": "Simple article",
             "url": "//www.publico.pt/[0-9]+/[0-9]+/[0-9]+/[a-zA-Z]+/.*",
+            "scope": "article",
             "fields":
             {
                 "title": "h1.headline | trim",
-                "body": {
-                    "type": "collection",
-                    "selector": "div#story-body",
-                    "field": [ "p | trim" ]
-                }
+                "image": "figure img@data-interchange | match:",
+                "body | join": [ "div#story-body p | spaceout | trim" ]
             }
+        }
+    ],
+    "tests": [
+        {
+            "https://twitter.com/celso": "obj.length > 5"
         }
     ]
 }

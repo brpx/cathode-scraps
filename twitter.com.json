@@ -19,12 +19,12 @@
                     "date": "small.time span._timestamp@data-time",
                     "thumb": "div.AdaptiveMedia-photoContainer@data-image-url"
                 }
-            ],
-            "tests": [
-                {
-                    "https://twitter.com/celso": "obj.length > 5"
-                }
             ]
+        }
+    ],
+    "tests": [
+        {
+            "https://twitter.com/celso": "obj.length > 5"
         }
     ]
 }
