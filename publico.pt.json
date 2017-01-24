@@ -12,14 +12,14 @@
             "fields":
             {
                 "title": "h1.headline | trim",
-                "image": "figure img@data-interchange | match:",
+                "image": "figure img@data-interchange | match:'(https://.*), (ilarge#imedium#large-retina)'",
                 "body | join": [ "div#story-body p | spaceout | trim" ]
             }
         }
     ],
     "tests": [
         {
-            "https://twitter.com/celso": "obj.length > 5"
+            "https://www.publico.pt/2017/01/24/politica/noticia/marcelo-mais-genuino-soares-mais-racional-1759409": "obj.length > 0"
         }
     ]
 }
