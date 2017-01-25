@@ -12,8 +12,10 @@
             "fields":
             {
                 "title": "h1.headline | trim",
-                "image": "figure img@data-interchange | match:'(https://.*), (ilarge#imedium#large-retina)'",
-                "body | join": [ "div#story-body p | spaceout | trim" ]
+                "image": "figure img@data-interchange | match:'(https://.*), (large#medium#large-retina)'",
+                "video": "figure source[type=\"video/mp4\"]@src",
+                "body | join": [ "div#story-body p | spaceout | trim" ],
+                "parts": [ "div#story-body p | spaceout | trim" ]
             }
         }
     ],

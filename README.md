@@ -194,6 +194,7 @@ You can see how this works in the *grabbing the story* example above.
  * **strip** - strips html from result
  * **spaceout** - unglues words from tags, adding a space between
  * **clean** - cleans up excessive spaces and carriage returns, turns them into a single space
+ * **match:regexp** - powerful regular expression filter
 
 ### Post filters
 
