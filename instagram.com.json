@@ -1,0 +1,22 @@
+{
+    "name": "Instagram",
+    "author": {
+        "name": "Celso Martinho",
+        "email": "celso@brpx.com"
+    },
+    "recipes": [
+        {
+            "title": "User",
+            "url": "/.*",
+            "fields":
+            {
+                "feed | json:entry_data.ProfilePage[0].user.media.nodes": "body script:first-of-type | match:\"window._sharedData = (.*);\""
+            }
+        }
+    ],
+    "tests": [
+        {
+            "https://www.instagram.com/celsomartinho/": "obj.length > 0"
+        }
+    ]
+}
