@@ -1,0 +1,23 @@
+{
+    "name": "Amazon",
+    "author": {
+        "name": "Celso Martinho",
+        "email": "celso@brpx.com"
+    },
+    "recipes": [
+        {
+            "title": "Product",
+            "url": "//www.amazon.com/.*",
+            "scope": "article",
+            "fields":
+            {
+                "title": "#title_feature_div span"
+            }
+        }
+    ],
+    "tests": [
+        {
+            "https://www.publico.pt/2017/01/24/politica/noticia/marcelo-mais-genuino-soares-mais-racional-1759409": "obj.length > 0"
+        }
+    ]
+}
