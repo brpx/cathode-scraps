@@ -7,7 +7,7 @@
     "recipes": [
         {
             "title": "Product",
-            "url": "//www.amazon.com/.*",
+            "url": "//www.amazon..*/.*",
             "fields":
             {
                 "title": "div[id=\"title_feature_div\"] span | clean | trim",

@@ -8,15 +8,19 @@
         {
             "title": "User",
             "url": "/.*",
-            "fields":
-            {
-                "feed | json:entry_data.ProfilePage[0].user.media.nodes": "body script:first-of-type | match:\"window._sharedData = (.*);\""
-            }
+            "render": true,
+            "scope": "article div div div div *",
+            "fields": [
+                {
+                    "image" : "img[id^=\"pImage_\"]@src",
+                    "title" : "img[id^=\"pImage_\"]@alt"
+                }
+            ]
         }
     ],
     "tests": [
         {
-            "https://www.instagram.com/celsomartinho/": "obj.length > 0"
+            "https://www.instagram.com/celsomartinho/": "obj.length > 11"
         }
     ]
 }

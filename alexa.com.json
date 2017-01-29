@@ -12,9 +12,14 @@
             "fields": [
                 {
                     "url": "p.desc-paragraph a",
-                    "title": "div.description | trim"
+                    "title": "div.description | clean | trim"
                 }
             ]
+        }
+    ],
+    "tests": [
+        {
+            "http://www.alexa.com/topsites/countries/PT": "obj.length > 10"
         }
     ]
 }

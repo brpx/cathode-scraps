@@ -22,5 +22,10 @@
                 }
             ]
         }
+    ],
+    "tests": [
+        {
+            "https://eztv.ag/shows/249/the-simpsons/": "obj.length > 10"
+        }
     ]
 }
