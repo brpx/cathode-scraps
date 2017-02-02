@@ -12,7 +12,7 @@
             {
                 "title": "div[id=\"title_feature_div\"] span | clean | trim",
                 "features": [ "div[id=\"featurebullets_feature_div\"] li[class!=\"aok-hidden\"] span | clean | trim" ],
-                "price": "span[id=\"priceblock_ourprice\"] | match:\"\"",
+                "price": "span[id=\"priceblock_ourprice\"]",
                 "rating": "div[data-feature-name=\"averageCustomerReviews\"] div span span | clean | trim | match:\"([0-9\\.]+) \"",
                 "histogram:1": {
                     "5star": "tr[class=\"a-histogram-row\"] a[href*=\"five_star\"] div[class=\"a-meter\"]@aria-label",
