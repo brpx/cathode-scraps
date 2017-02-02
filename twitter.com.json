@@ -13,8 +13,9 @@
             "scope": ".content",
             "fields": [
                 {
-                    "title": "p.TweetTextSize@html | spaceout | strip | trim | clean",
+                    "title": "p.TweetTextSize@html | strip | trim | clean",
                     "embed": "p.TweetTextSize a[data-pre-embedded=\"true\"]@html",
+                    "extlink": "p.TweetTextSize a@data-expanded-url",
                     "url": "small.time a@href",
                     "date": "small.time span._timestamp@data-time",
                     "thumb": "div.AdaptiveMedia-photoContainer@data-image-url"
