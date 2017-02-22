@@ -11,7 +11,7 @@
             "scope": "#js_comics div:nth-child(1) div.comic-item-container",
             "fields": [
                 {
-                    "date": "@data-date",
+                    "date": "@data-id | date:YYYY-MM-DD",
                     "creator": "@creator",
                     "title": "@data-title",
                     "url": "@data-url",
