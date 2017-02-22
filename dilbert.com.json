@@ -6,7 +6,7 @@
     },
     "recipes": [
         {
-            "title": "Feed",
+            "title": "Dilbert Comics",
             "url": "//dilbert.com/",
             "scope": "#js_comics div:nth-child(1) div.comic-item-container",
             "fields": [
