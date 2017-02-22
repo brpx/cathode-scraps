@@ -1,0 +1,26 @@
+{
+    "name": "The Oatmeal",
+    "author": {
+        "name": "Celso Martinho",
+        "email": "celso@brpx.com"
+    },
+    "recipes": [
+        {
+            "title": "The Oatmeal",
+            "url": "//theoatmeal.com/comics",
+            "scope": ".bg_comic",
+            "fields": [
+                {
+                    "title": "img@alt",
+                    "image": "img@src",
+                    "url": "a@href | replace:/comics/,http://theoatmeal.com/comics/"
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "http://theoatmeal.com/comics": "obj.length > 0"
+        }
+    ]
+}
