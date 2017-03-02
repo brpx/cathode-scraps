@@ -12,7 +12,7 @@
             "fields": [
                 {
                     "image": ".media img@src",
-                    "url": ".media a:nth-child(1)@href"
+                    "url": ".media a a@href"
                 }
             ]
         }
