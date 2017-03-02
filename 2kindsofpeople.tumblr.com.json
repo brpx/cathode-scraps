@@ -1,0 +1,25 @@
+{
+    "name": "Two kinds of people",
+    "author": {
+        "name": "Celso Martinho",
+        "email": "celso@brpx.com"
+    },
+    "recipes": [
+        {
+            "title": "Two kinds of people",
+            "url": "//2kindsofpeople.tumblr.com/",
+            "scope": ".autopagerize_page_element .posts",
+            "fields": [
+                {
+                    "image": ".media img@src",
+                    "url": ".media a:nth-child(1)@href"
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "http://2kindsofpeople.tumblr.com/": "obj.length > 0"
+        }
+    ]
+}
