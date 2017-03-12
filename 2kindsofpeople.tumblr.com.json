@@ -17,6 +17,7 @@
                 {
                     "title": ".datenotes@html",
                     "image": ".posts .media img@src",
+                    "date": ".datenotes:nth-child(2) a@html | date:\"Do MMM YYYY\"",
                     "url": ".posts .media a:nth-child(1)@href"
                 }
             ]
