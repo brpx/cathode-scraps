@@ -17,7 +17,7 @@
                 {
                     "title": ".datenotes@html",
                     "image": ".posts .media img@src",
-                    "url": ".media a:nth-child(1)@href"
+                    "url": ".posts .media a:nth-child(1)@href"
                 }
             ]
         }
