@@ -1,0 +1,28 @@
+{
+    "name": "Color Hunt",
+    "author": {
+        "name": "Celso Martinho",
+        "email": "celso@brpx.com"
+    },
+    "recipes": [
+        {
+            "title": "Colorhunt Random",
+            "url": "//colorhunt.co/random",
+            "render": true,
+            "scope": ".feed .item",
+            "fields": [
+                {
+                    "color1": ".canvas .c1 span@html",
+                    "color2": ".canvas .c2 span@html",
+                    "color3": ".canvas .c3 span@html",
+                    "color4": ".canvas .c4 span@html"
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "http://colorhunt.co/random": "obj.length > 0"
+        }
+    ]
+}
