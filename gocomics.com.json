@@ -1,0 +1,25 @@
+{
+    "name": "Go Comics",
+    "author": {
+        "name": "Celso Martinho",
+        "email": "celso@brpx.com"
+    },
+    "recipes": [
+        {
+            "title": "Go Comics Section",
+            "url": "/.*",
+            "fields":
+                {
+                    "title": ".item-comic-link@title",
+                    "image": ".item-comic-link img@src",
+                    "date": "#js-item-start@data-date | date:\"MMM DD, YYYY\"",
+                    "creator": "#js-item-start@creator"
+                }
+        }
+    ],
+    "tests": [
+        {
+            "http://www.gocomics.com/the-adventures-of-business-cat": "obj.length > 0"
+        }
+    ]
+}
